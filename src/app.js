@@ -1,8 +1,11 @@
 const express = require('express')
+const mongo = require('./db')
 const bodyParser  = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 const app = express()
+
+mongo()
 
 
 app.use(morgan('dev'))
