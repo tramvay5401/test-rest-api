@@ -1,5 +1,6 @@
 const express = require('express')
 const mongo = require('./db')
+const passport = require('passport')
 const bodyParser  = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
@@ -7,6 +8,8 @@ const app = express()
 
 mongo()
 
+app.use(passport.initialize())
+require('./middleware/passport')(passport)
 
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended:true}))
