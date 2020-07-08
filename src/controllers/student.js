@@ -1,28 +1,40 @@
-module.exports.getAll = function (req,res) {
-    res.status(200).json({
-        getAllLesson: 'from controllers'
-    })
+const errorHandler = require('../utils/errorHandler')
+
+module.exports.getAll =  async function (req,res) {
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
-module.exports.getById = function (req,res) {
-    res.status(200).json({
-        getLesson: 'from controllers'
-    })
+module.exports.getById = async function (req,res) {
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 
-module.exports.remove = function (req,res) {
-    res.status(200).json({
-        getLesson: 'from controllers'
-    })
+module.exports.remove = async function (req,res) {
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 
-module.exports.create = function (req, res) {
-    res.status(200).json({
-        createLesson: 'from controllers'
-    })
+module.exports.create = async function (req, res) {
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 
-module.exports.update = function (req,res) {
-    res.status(200).json({
-        editLesson: 'from controllers'
-    })
+module.exports.update =  async function (req,res) {
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }

@@ -1,28 +1,40 @@
+const errorHandler = require('../utils/errorHandler')
+
 module.exports.getAll = function (req,res) {
-    res.status(200).json({
-        getAllLesson: 'from controllers'
-    })
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 module.exports.getById = function (req,res) {
-    res.status(200).json({
-        getLesson: 'from controllers'
-    })
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 
 module.exports.remove = function (req,res) {
-    res.status(200).json({
-        getLesson: 'from controllers'
-    })
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 
 module.exports.create = function (req, res) {
-    res.status(200).json({
-        createLesson: 'from controllers'
-    })
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
 
 module.exports.update = function (req,res) {
-    res.status(200).json({
-        editLesson: 'from controllers'
-    })
+    try {
+
+    } catch (e) {
+        errorHandler(res, e)
+    }
 }
